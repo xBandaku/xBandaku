@@ -40,10 +40,6 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
   <img alt="Snake animation of xBandaku's GitHub contributions" src="assets/github-snake.svg" />
 </picture>
 
-### 🏆 GitHub trophies
-
-![xBandaku's GitHub trophies](https://github-profile-trophy.vercel.app/?username=xBandaku&theme=radical&no-frame=true&no-bg=true&margin-w=4)
-
 ### 👷 What I'm currently working on
 
 - **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — A Windows wallpaper HUD with live system stats, audio visualization, themes, and per-monitor OLED care. Includes the JARVIS / SHIELD edition.
