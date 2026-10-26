@@ -34,8 +34,8 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 - [Fix audio output switching, desktop attachment retries, and feed cleanup](https://github.com/xBandaku/HUD-Live-OLED/pull/10) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Set up GitHub security workflows, code reviews, sponsorship, and community templates](https://github.com/xBandaku/HUD-Live-OLED/pull/2) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Require pull requests and detailed review notes for project changes](https://github.com/xBandaku/HUD-Live-OLED/pull/1) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
-- [Restyle Discord notifications and prepare v68.5.29](https://github.com/xBandaku/TwitchAdSolutions/pull/31) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 - [Consolidate CI and fix automated release notifications](https://github.com/xBandaku/TwitchAdSolutions/pull/30) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Restyle Discord notifications and prepare v68.5.29](https://github.com/xBandaku/TwitchAdSolutions/pull/31) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
