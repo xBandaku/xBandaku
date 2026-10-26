@@ -61,21 +61,21 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
+- [Fix JARVIS audio switching, startup attachment recovery, and feed cleanup](https://github.com/xBandaku/HUD-Live-OLED/pull/13) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Fix audio output switching, desktop attachment retries, and feed cleanup](https://github.com/xBandaku/HUD-Live-OLED/pull/10) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Set up GitHub security workflows, code reviews, sponsorship, and community templates](https://github.com/xBandaku/HUD-Live-OLED/pull/2) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Require pull requests and detailed review notes for project changes](https://github.com/xBandaku/HUD-Live-OLED/pull/1) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Consolidate CI and fix automated release notifications](https://github.com/xBandaku/TwitchAdSolutions/pull/30) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [Restyle Discord notifications and prepare v68.5.29](https://github.com/xBandaku/TwitchAdSolutions/pull/31) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
+- [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
+- [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku) — My projects, recent activity, and links.
 - [Equicord/Equicord](https://github.com/Equicord/Equicord) — The other cutest Discord client mod
 - [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows live wallpaper HUD with system telemetry, audio visualization, themes, named profiles, and per-monitor OLED care.
 - [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — If you have issues please file them, and I’ll do my best to fix them
-- [BossSloth/Extendium](https://github.com/BossSloth/Extendium) — A Millennium plugin for the steam client that adds chrome extension support
-- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school routine
 <!-- stars:end -->
 
 ### 📫 Find me
