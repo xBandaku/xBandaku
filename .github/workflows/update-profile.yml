@@ -8,6 +8,7 @@ on:
     paths:
       - scripts/Update-Profile.ps1
       - .github/workflows/update-profile.yml
+      - README.md
 permissions:
   contents: write
 concurrency:
@@ -24,12 +25,21 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: ./scripts/Update-Profile.ps1
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg?color_snake=%2356e0cd
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=%2356e0cd
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Commit profile updates
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md assets/stats.svg
+          git add README.md assets/stats.svg assets/github-snake.svg assets/github-snake-dark.svg
           if ! git diff --cached --quiet; then
             git commit -m "Refresh public GitHub activity"
             git push

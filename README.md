@@ -4,6 +4,24 @@
 
 Windows desktop tools, game mods, and small fixes for everyday annoyances.
 
+### 💫 About me
+
+- 🖥️ I build Windows desktop tools, live wallpaper HUDs, and customization projects.
+- 🛠️ I make game mods and plugins that simplify everyday tasks.
+- 🐼 Currently working on **HUD Live OLED** and **HideOwnStreamPreview**.
+- 💬 Have a bug report or an idea? Open an issue in the relevant project.
+
+### 💻 Tech stack
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
 ### Socials
 
 [![Twitch](https://img.shields.io/badge/Twitch-xkangoku-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/xkangoku)
@@ -13,6 +31,18 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ### GitHub Stats
 
 ![Public GitHub repository stats](assets/stats.svg)
+
+### 🐍 Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg" />
+  <img alt="Snake animation of xBandaku's GitHub contributions" src="assets/github-snake.svg" />
+</picture>
+
+### 🏆 GitHub trophies
+
+![xBandaku's GitHub trophies](https://github-profile-trophy.vercel.app/?username=xBandaku&theme=radical&no-frame=true&no-bg=true&margin-w=4)
 
 ### 👷 What I'm currently working on
 
@@ -57,3 +87,5 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ---
 
 <sub>Stats and activity refresh daily from public GitHub data.</sub>
+
+<sub>Profile section inspiration: [Z3phyr1s](https://github.com/Z3phyr1s/Z3phyr1s). Contribution animation powered by [Platane/snk](https://github.com/Platane/snk).</sub>
