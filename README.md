@@ -57,21 +57,21 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
-- [Fix JARVIS audio switching, startup attachment recovery, and feed cleanup](https://github.com/xBandaku/HUD-Live-OLED/pull/13) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
+- [Release JARVIS 41.0.2 with persistent bottom-aligned taskbars and settings fixes](https://github.com/xBandaku/HUD-Live-OLED/pull/14) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
+- [Release JARVIS 41.0.1 with audio, startup, and feed recovery fixes](https://github.com/xBandaku/HUD-Live-OLED/pull/13) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Fix audio output switching, desktop attachment retries, and feed cleanup](https://github.com/xBandaku/HUD-Live-OLED/pull/10) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Set up GitHub security workflows, code reviews, sponsorship, and community templates](https://github.com/xBandaku/HUD-Live-OLED/pull/2) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
 - [Require pull requests and detailed review notes for project changes](https://github.com/xBandaku/HUD-Live-OLED/pull/1) on [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED)
-- [Consolidate CI and fix automated release notifications](https://github.com/xBandaku/TwitchAdSolutions/pull/30) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
+- [FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod](https://github.com/FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod) — Nice car\! Give me it.
+- [Veydr/Veydr](https://github.com/Veydr/Veydr) — Veydr \| Windows tools, cinematic desktops, browser integrations and local AI.
 - [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
 - [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku) — My projects, recent activity, and links.
 - [Equicord/Equicord](https://github.com/Equicord/Equicord) — The other cutest Discord client mod
-- [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows live wallpaper HUD with system telemetry, audio visualization, themes, named profiles, and per-monitor OLED care.
-- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — If you have issues please file them, and I’ll do my best to fix them
 <!-- stars:end -->
 
 ### 📫 Find me
