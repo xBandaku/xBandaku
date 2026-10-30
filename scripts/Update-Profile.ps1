@@ -54,7 +54,37 @@ $cards = for ($i = 0; $i -lt 4; $i++) {
     '<text x="' + $x + '" y="82" fill="#91a6bc" font-size="11" letter-spacing="1.2">' + $labels[$i] + '</text>'
 }
 $svg = '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="108" viewBox="0 0 900 108" role="img" aria-labelledby="title"><title id="title">Public project statistics for xBandaku, excluding the profile repository</title><rect width="900" height="108" rx="12" fill="#0d1623"/><path d="M225 24v60m220-60v60m220-60v60" stroke="#263a4e"/><g font-family="Segoe UI,Arial,sans-serif">' + ($cards -join '') + '</g></svg>'
+
+# Update locally hosted featured cards from the same public repository data.
+$featured = @{
+    'HUD-Live-OLED' = 'hud-live-oled'
+    'HideOwnStreamPreview' = 'hide-own-stream-preview'
+    'GLSS' = 'glss'
+    'GLQS' = 'glqs'
+}
+$languageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5' }
+$projectCards = @{}
+foreach ($name in $featured.Keys) {
+    $repo = $repos | Where-Object name -eq $name | Select-Object -First 1
+    if (!$repo) { throw "Featured repository missing from public data: $name" }
+    $language = if ($repo.language) { [string]$repo.language } else { 'Not specified' }
+    $languageColor = if ($languageColors.ContainsKey($language)) { $languageColors[$language] } else { '#91a6bc' }
+    $language = [Net.WebUtility]::HtmlEncode($language)
+    $metadata = '<g id="repo-metadata"><circle cx="27" cy="141" r="5" fill="' + $languageColor + '"/>' +
+        '<text x="39" y="145" fill="#91a6bc" font-size="11">' + $language + '</text>' +
+        '<text x="180" y="145" fill="#91a6bc" font-size="11">★ ' + [int]$repo.stargazers_count + ' stars</text>' +
+        '<text x="295" y="145" fill="#91a6bc" font-size="11">⑂ ' + [int]$repo.forks_count + ' forks</text></g>'
+    $cardPath = Join-Path $root ('assets/projects/' + $featured[$name] + '.svg')
+    $card = [IO.File]::ReadAllText($cardPath)
+    $pattern = '<g id="repo-metadata">.*?</g>'
+    if (![regex]::IsMatch($card, $pattern)) { throw "Missing metadata group in $cardPath" }
+    $projectCards[$cardPath] = [regex]::Replace($card, $pattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $metadata })
+}
+
 # Fetch everything before writing so an API failure preserves the last good profile.
 [IO.File]::WriteAllText((Join-Path $root 'assets/stats.svg'), $svg + "`n")
 [IO.File]::WriteAllText($readmePath, $readme)
+foreach ($cardPath in $projectCards.Keys) {
+    [IO.File]::WriteAllText($cardPath, $projectCards[$cardPath])
+}
 Write-Output 'Updated public projects, pull requests, stars, and repository statistics.'

@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md assets/stats.svg assets/github-snake.svg assets/github-snake-dark.svg
+          git add assets/projects/*.svg README.md assets/stats.svg assets/github-snake.svg assets/github-snake-dark.svg
           if ! git diff --cached --quiet; then
             git commit -m "Refresh public GitHub activity"
             git push
