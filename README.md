@@ -27,8 +27,16 @@
   <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview.svg" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
 </p>
 
+<p>
+  <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss.svg" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
+  <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs.svg" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
+</p>
+
 - **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — Includes the JARVIS / SHIELD edition, live system stats, audio visualization, themes, and per-monitor OLED care.
 - **[HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)** — Hides your own floating screen-share preview while keeping your stream running.
+
+- **[GLSS](https://github.com/xBandaku/GLSS)** — Automates school and university routines in Girl Life (18+), with one-click days and optional ghost attendance.
+- **[GLQS](https://github.com/xBandaku/GLQS)** — In-game quick setup, cheats, resource controls, and character presets for Girl Life (18+).
 
 [Browse all my repositories →](https://github.com/xBandaku?tab=repositories)
 
