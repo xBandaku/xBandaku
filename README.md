@@ -17,16 +17,17 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+<br />
+![PowerShell](assets/badges/powershell.svg)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ### Socials
 
-[![Twitch](https://img.shields.io/badge/Twitch-xkangoku-9146FF?style=for-the-badge&logo=twitch&logoColor=white)](https://www.twitch.tv/xkangoku)
-[![YouTube](https://img.shields.io/badge/YouTube-%40iPandaku-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@iPandaku)
-[![GitHub](https://img.shields.io/badge/GitHub-xBandaku-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xBandaku?tab=repositories)
+[![Twitch](assets/badges/twitch.svg)](https://www.twitch.tv/xkangoku)
+[![YouTube](assets/badges/youtube.svg)](https://www.youtube.com/@iPandaku)
+[![GitHub](assets/badges/github.svg)](https://github.com/xBandaku?tab=repositories)
 
 ### GitHub Stats
 
