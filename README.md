@@ -23,13 +23,13 @@
 <summary><h2>📘 Featured projects</h2></summary>
 
 <p>
-  <a href="https://github.com/xBandaku/HUD-Live-OLED"><img src="assets/projects/hud-live-oled.svg?v=metadata-2" width="48%" alt="HUD Live OLED — Windows wallpaper HUD with system stats, audio visualization, themes, and OLED care." /></a>
-  <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview.svg?v=metadata-2" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
+  <a href="https://github.com/xBandaku/HUD-Live-OLED"><img src="assets/projects/hud-live-oled.svg?v=ac4faabb7203" width="48%" alt="HUD Live OLED — Windows wallpaper HUD with system stats, audio visualization, themes, and OLED care." /></a>
+  <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview.svg?v=f91790af56f0" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
 </p>
 
 <p>
-  <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss.svg?v=metadata-2" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
-  <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs.svg?v=metadata-2" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
+  <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss.svg?v=7ff1731a788b" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
+  <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs.svg?v=b586cfafef72" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
 </p>
 
 - **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — Includes the JARVIS / SHIELD edition, live system stats, audio visualization, themes, and per-monitor OLED care.
@@ -46,8 +46,8 @@
 <summary><h2>📕 Projects I've contributed to</h2></summary>
 
 <p>
-  <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
-  <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
+  <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=d931fd897483" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
+  <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=41e5331a6590" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
 </p>
 
 - **[Extras_Addon](https://github.com/Deadlineem/Extras_Addon)** — [Merged contribution](https://github.com/Deadlineem/Extras_Addon/pull/91) to the YimMenu addon.
