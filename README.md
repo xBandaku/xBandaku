@@ -2,7 +2,15 @@
 
 ![xPandaku — Windows tools, mods, and desktop customization](assets/banner.svg)
 
-Windows desktop tools, game mods, and small fixes for everyday annoyances.
+<p align="center">
+  <img src="assets/intro.svg" alt="Building Windows tools, game mods, and desktop customization projects." />
+</p>
+
+<p align="center">
+  <a href="https://www.twitch.tv/xkangoku"><img src="assets/badges/twitch.svg" alt="Twitch: xkangoku" /></a>
+  <a href="https://www.youtube.com/@iPandaku"><img src="assets/badges/youtube.svg" alt="YouTube: @iPandaku" /></a>
+  <a href="https://github.com/xBandaku?tab=repositories"><img src="assets/badges/github.svg" alt="GitHub: xBandaku" /></a>
+</p>
 
 ### 💫 About me
 
@@ -10,6 +18,21 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 - 🛠️ I make game mods and plugins that simplify everyday tasks.
 - 🐼 Currently working on **HUD Live OLED** and **HideOwnStreamPreview**.
 - 💬 Have a bug report or an idea? Open an issue in the relevant project.
+
+<details open>
+<summary><h2>📘 Featured projects</h2></summary>
+
+<p>
+  <a href="https://github.com/xBandaku/HUD-Live-OLED"><img src="assets/projects/hud-live-oled.svg" width="48%" alt="HUD Live OLED — Windows wallpaper HUD with system stats, audio visualization, themes, and OLED care." /></a>
+  <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview.svg" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
+</p>
+
+- **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — Includes the JARVIS / SHIELD edition, live system stats, audio visualization, themes, and per-monitor OLED care.
+- **[HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)** — Hides your own floating screen-share preview while keeping your stream running.
+
+[Browse all my repositories →](https://github.com/xBandaku?tab=repositories)
+
+</details>
 
 ### 💻 Tech stack
 
@@ -22,13 +45,8 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-### Socials
-
-[![Twitch](assets/badges/twitch.svg)](https://www.twitch.tv/xkangoku)
-[![YouTube](assets/badges/youtube.svg)](https://www.youtube.com/@iPandaku)
-[![GitHub](assets/badges/github.svg)](https://github.com/xBandaku?tab=repositories)
-
-### GitHub Stats
+<details open>
+<summary><h2>📊 Stats and contributions</h2></summary>
 
 ![Public GitHub repository stats](assets/stats.svg)
 
@@ -40,10 +58,10 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
   <img alt="Snake animation of xBandaku's GitHub contributions" src="assets/github-snake.svg" />
 </picture>
 
-### 👷 What I'm currently working on
+</details>
 
-- **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — A Windows wallpaper HUD with live system stats, audio visualization, themes, and per-monitor OLED care. Includes the JARVIS / SHIELD edition.
-- **[HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)** — An Equicord plugin that hides your own floating screen-share preview while keeping your stream running.
+<details>
+<summary><h2>⚡ Recent GitHub activity</h2></summary>
 
 ### 🌱 My latest projects
 
@@ -74,6 +92,8 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 - [Equicord/Equicord](https://github.com/Equicord/Equicord) — The other cutest Discord client mod
 <!-- stars:end -->
 
+</details>
+
 ### 📫 Find me
 
 - Twitch: [xkangoku](https://www.twitch.tv/xkangoku)
@@ -84,4 +104,4 @@ Windows desktop tools, game mods, and small fixes for everyday annoyances.
 
 <sub>Stats and activity refresh daily from public GitHub data.</sub>
 
-<sub>Profile section inspiration: [Z3phyr1s](https://github.com/Z3phyr1s/Z3phyr1s). Contribution animation powered by [Platane/snk](https://github.com/Platane/snk).</sub>
+<sub>Profile section inspiration: [Z3phyr1s](https://github.com/Z3phyr1s/Z3phyr1s) and [DenverCoder1](https://github.com/DenverCoder1/DenverCoder1). Contribution animation powered by [Platane/snk](https://github.com/Platane/snk).</sub>
