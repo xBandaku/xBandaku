@@ -87,6 +87,19 @@ foreach ($name in $featured.Keys) {
     $projectCards[$cardPath] = [regex]::Replace($card, $pattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $metadata })
 }
 
+
+# Change image URLs when card contents change so GitHub does not reuse stale SVGs.
+foreach ($name in $featured.Keys) {
+    $relativeCard = 'assets/projects/' + $featured[$name] + '.svg'
+    $cardPath = Join-Path $root $relativeCard
+    $bytes = [Text.Encoding]::UTF8.GetBytes($projectCards[$cardPath])
+    $digest = [Security.Cryptography.SHA256]::HashData($bytes)
+    $version = [Convert]::ToHexString($digest).Substring(0, 12).ToLowerInvariant()
+    $imagePattern = '(?<=src=")' + [regex]::Escape($relativeCard) + '(?:\?v=[^"]*)?(?=")'
+    $versionedCard = $relativeCard + '?v=' + $version
+    $readme = [regex]::Replace($readme, $imagePattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $versionedCard })
+}
+
 # Fetch everything before writing so an API failure preserves the last good profile.
 [IO.File]::WriteAllText((Join-Path $root 'assets/stats.svg'), $svg + "`n")
 [IO.File]::WriteAllText($readmePath, $readme)
