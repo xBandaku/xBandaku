@@ -57,10 +57,10 @@ $svg = '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="108" viewBox
 
 # Update locally hosted featured cards from the same public repository data.
 $featured = @{
-    'HUD-Live-OLED' = 'hud-live-oled'
-    'HideOwnStreamPreview' = 'hide-own-stream-preview'
-    'GLSS' = 'glss'
-    'GLQS' = 'glqs'
+    'HUD-Live-OLED' = 'hud-live-oled-stats'
+    'HideOwnStreamPreview' = 'hide-own-stream-preview-stats'
+    'GLSS' = 'glss-stats'
+    'GLQS' = 'glqs-stats'
     'Extras_Addon' = 'extras-addon'
     'f95-zone-highlighter' = 'f95-zone-highlighter'
 }
