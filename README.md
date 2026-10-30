@@ -42,6 +42,19 @@
 
 </details>
 
+<details open>
+<summary><h2>📕 Projects I've contributed to</h2></summary>
+
+<p>
+  <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
+  <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
+</p>
+
+- **[Extras_Addon](https://github.com/Deadlineem/Extras_Addon)** — [Merged contribution](https://github.com/Deadlineem/Extras_Addon/pull/91) to the YimMenu addon.
+- **[f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter)** — [Merged pull requests](https://github.com/Zenix-Al/f95-zone-highlighter/pulls?q=is%3Apr+is%3Amerged+author%3AxBandaku) covering security fixes, library updates, configuration recovery, and UI reliability.
+
+</details>
+
 ### 💻 Tech stack
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)

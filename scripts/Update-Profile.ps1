@@ -61,11 +61,17 @@ $featured = @{
     'HideOwnStreamPreview' = 'hide-own-stream-preview'
     'GLSS' = 'glss'
     'GLQS' = 'glqs'
+    'Extras_Addon' = 'extras-addon'
+    'f95-zone-highlighter' = 'f95-zone-highlighter'
 }
-$languageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5' }
+$languageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5'; Lua = '#000080' }
+$contributedRepos = @(
+    Get-PublicData 'repos/Deadlineem/Extras_Addon'
+    Get-PublicData 'repos/Zenix-Al/f95-zone-highlighter'
+)
 $projectCards = @{}
 foreach ($name in $featured.Keys) {
-    $repo = $repos | Where-Object name -eq $name | Select-Object -First 1
+    $repo = @($repos + $contributedRepos) | Where-Object name -eq $name | Select-Object -First 1
     if (!$repo) { throw "Featured repository missing from public data: $name" }
     $language = if ($repo.language) { [string]$repo.language } else { 'Not specified' }
     $languageColor = if ($languageColors.ContainsKey($language)) { $languageColors[$language] } else { '#91a6bc' }
