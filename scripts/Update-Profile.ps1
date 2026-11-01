@@ -16,17 +16,52 @@ function Repo-Line($repo) {
     if ($repo.description) { $line += ' — ' + (Safe-Text $repo.description) }
     $line
 }
-$repos = @()
-$page = 1
-do {
-    $batch = @(Get-PublicData "users/$user/repos?type=owner&per_page=100&page=$page")
-    $repos += $batch | Where-Object { !$_.private -and $_.name -ne $user }
-    $page++
-} while ($batch.Count -eq 100)
-$latest = @($repos | Where-Object { !$_.fork } | Sort-Object created_at -Descending | Select-Object -First 5)
 $query = [Uri]::EscapeDataString("author:$user is:pr is:public")
-$pulls = Get-PublicData "search/issues?q=$query&sort=updated&order=desc&per_page=5"
-$stars = @(Get-PublicData "users/$user/starred?per_page=5&sort=created&direction=desc")
+$jobs = @{
+    pulls = Start-ThreadJob -Name 'pulls' -ArgumentList $headers, $query -ScriptBlock {
+        param($requestHeaders, $searchQuery)
+        Invoke-RestMethod -Uri ('https://api.github.com/search/issues?q=' + $searchQuery + '&sort=updated&order=desc&per_page=5') -Headers $requestHeaders
+    }
+    stars = Start-ThreadJob -Name 'stars' -ArgumentList $headers -ScriptBlock {
+        param($requestHeaders)
+        Invoke-RestMethod -Uri 'https://api.github.com/users/xBandaku/starred?per_page=5&sort=created&direction=desc' -Headers $requestHeaders
+    }
+    extras = @(
+        Start-ThreadJob -Name 'extras-addon' -ArgumentList $headers -ScriptBlock {
+            param($requestHeaders)
+            Invoke-RestMethod -Uri 'https://api.github.com/repos/Deadlineem/Extras_Addon' -Headers $requestHeaders
+        }
+        Start-ThreadJob -Name 'f95-zone-highlighter' -ArgumentList $headers -ScriptBlock {
+            param($requestHeaders)
+            Invoke-RestMethod -Uri 'https://api.github.com/repos/Zenix-Al/f95-zone-highlighter' -Headers $requestHeaders
+        }
+    )
+}
+try {
+    $repos = @()
+    $page = 1
+    do {
+        $batch = @(Get-PublicData "users/$user/repos?type=owner&per_page=100&page=$page")
+        $repos += $batch | Where-Object { !$_.private -and $_.name -ne $user }
+        $page++
+    } while ($batch.Count -eq 100)
+
+    $requestJobs = @($jobs.pulls, $jobs.stars) + @($jobs.extras)
+    Wait-Job -Job $requestJobs | Out-Null
+    foreach ($job in $requestJobs) {
+        if ($job.State -ne 'Completed') {
+            throw "Failed to fetch $($job.Name) data: $($job.JobStateInfo.Reason)"
+        }
+    }
+    $pulls = Receive-Job -Job $jobs.pulls
+    $stars = @(Receive-Job -Job $jobs.stars)
+    $contributedRepos = @($jobs.extras | ForEach-Object { Receive-Job -Job $_ })
+}
+finally {
+    $requestJobs = @($jobs.pulls, $jobs.stars) + @($jobs.extras)
+    Remove-Job -Job $requestJobs -Force
+}
+$latest = @($repos | Where-Object { !$_.fork } | Sort-Object created_at -Descending | Select-Object -First 5)
 $sections = @{
     projects = ($latest | ForEach-Object { Repo-Line $_ }) -join "`n"
     prs = ($pulls.items | ForEach-Object {
@@ -65,10 +100,6 @@ $featured = @{
     'f95-zone-highlighter' = 'f95-zone-highlighter'
 }
 $languageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5'; Lua = '#000080' }
-$contributedRepos = @(
-    Get-PublicData 'repos/Deadlineem/Extras_Addon'
-    Get-PublicData 'repos/Zenix-Al/f95-zone-highlighter'
-)
 $projectCards = @{}
 foreach ($name in $featured.Keys) {
     $repo = @($repos + $contributedRepos) | Where-Object name -eq $name | Select-Object -First 1
