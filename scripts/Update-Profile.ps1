@@ -105,7 +105,28 @@ foreach ($key in $sections.Keys) {
 }
 $original = @($repos | Where-Object { !$_.fork })
 $starCount = ($repos | Measure-Object stargazers_count -Sum).Sum
-$languages = @($original | Where-Object language | Select-Object -ExpandProperty language -Unique)
+$languages = @($original | Where-Object language | Select-Object -ExpandProperty language -Unique | Sort-Object)
+$languageColors = @{
+    'C#' = '178600'; 'C++' = 'f34b7d'; CSS = '663399'; Go = '00ADD8'; HTML = 'e34c26'
+    Java = 'b07219'; JavaScript = 'f1e05a'; Lua = '000080'; PHP = '4F5D95'; Python = '3572A5'
+    Ruby = '701516'; Rust = 'dea584'; Shell = '89e051'; TypeScript = '3178c6'
+}
+$languageLogos = @{
+    'C#' = 'csharp'; 'C++' = 'cplusplus'; CSS = 'css3'; Go = 'go'; HTML = 'html5'
+    Java = 'openjdk'; JavaScript = 'javascript'; Lua = 'lua'; PHP = 'php'; Python = 'python'
+    Ruby = 'ruby'; Rust = 'rust'; TypeScript = 'typescript'
+}
+$languageBadges = $languages | ForEach-Object {
+    $name = [string]$_
+    $slug = [Uri]::EscapeDataString($name)
+    $color = if ($languageColors.ContainsKey($name)) { $languageColors[$name] } else { '64748b' }
+    $logo = if ($languageLogos.ContainsKey($name)) { '&logo=' + $languageLogos[$name] + '&logoColor=white' } else { '' }
+    '![{0}](https://img.shields.io/badge/{1}-{1}-{2}?style=for-the-badge{3})' -f ([Net.WebUtility]::HtmlEncode($name)), $slug, $color, $logo
+}
+$languagePattern = '(?s)<!-- languages:start -->.*?<!-- languages:end -->'
+if (![regex]::IsMatch($readme, $languagePattern)) { throw 'Missing README section: languages' }
+$languageReplacement = "<!-- languages:start -->`n" + ($languageBadges -join "`n") + "`n<!-- languages:end -->"
+$readme = [regex]::Replace($readme, $languagePattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $languageReplacement })
 $values = @($repos.Count, $starCount, $original.Count, $languages.Count)
 $labels = @('PUBLIC REPOS', 'REPO STARS', 'ORIGINAL PROJECTS', 'LANGUAGES')
 $cards = for ($i = 0; $i -lt 4; $i++) {
@@ -124,21 +145,34 @@ $featured = @{
     'Extras_Addon' = 'extras-addon'
     'f95-zone-highlighter' = 'f95-zone-highlighter'
 }
-$languageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5'; Lua = '#000080' }
+$projectLanguageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5'; Lua = '#000080' }
 $projectCards = @{}
 foreach ($name in $featured.Keys) {
     $repo = @($repos + $contributedRepos) | Where-Object name -eq $name | Select-Object -First 1
     if (!$repo) { throw "Featured repository missing from public data: $name" }
     $language = if ($repo.language) { [string]$repo.language } else { 'Not specified' }
-    $languageColor = if ($languageColors.ContainsKey($language)) { $languageColors[$language] } else { '#91a6bc' }
+    $languageColor = if ($projectLanguageColors.ContainsKey($language)) { $projectLanguageColors[$language] } else { '#91a6bc' }
     $language = [Net.WebUtility]::HtmlEncode($language)
-    $metadata = '<g id="repo-metadata"><circle cx="27" cy="141" r="5" fill="' + $languageColor + '"/>' +
+    $licenseName = if ($repo.license -and $repo.license.spdx_id -and $repo.license.spdx_id -ne 'NOASSERTION') {
+        [string]$repo.license.spdx_id
+    } else {
+        'LICENSE NOT DETECTED'
+    }
+    $licenseName = [Net.WebUtility]::HtmlEncode($licenseName)
+    $licenseWidth = [Math]::Min(128, [Math]::Max(60, ($licenseName.Length * 5.4) + 16))
+    $licenseX = 408 - $licenseWidth
+    $licenseTextX = $licenseX + 8
+    $licenseBadge = '<g id="license-badge"><rect x="' + $licenseX + '" y="18" width="' + $licenseWidth + '" height="18" rx="6" fill="#162435" stroke="#263a4e"/>' +
+        '<text x="' + $licenseTextX + '" y="30" fill="#91a6bc" font-size="9" font-weight="600">' + $licenseName + '</text></g>'
+    $metadata = $licenseBadge + '<g id="repo-metadata"><circle cx="27" cy="141" r="5" fill="' + $languageColor + '"/>' +
         '<text x="39" y="145" fill="#91a6bc" font-size="11">' + $language + '</text>' +
         '<text x="180" y="145" fill="#91a6bc" font-size="11">★ ' + [int]$repo.stargazers_count + ' stars</text>' +
         '<text x="295" y="145" fill="#91a6bc" font-size="11">⑂ ' + [int]$repo.forks_count + ' forks</text></g>'
     $cardPath = Join-Path $root ('assets/projects/' + $featured[$name] + '.svg')
     $card = [IO.File]::ReadAllText($cardPath)
-    $pattern = '<g id="repo-metadata">.*?</g>'
+    $card = [regex]::Replace($card, 'height="(?:166|194)" viewBox="0 0 430 (?:166|194)"', 'height="166" viewBox="0 0 430 166"')
+    $card = [regex]::Replace($card, '<rect x="1" y="1" width="428" height="(?:164|192)"', '<rect x="1" y="1" width="428" height="164"')
+    $pattern = '(?:<g id="license-badge">.*?</g>)?<g id="repo-metadata">.*?</g>'
     if (![regex]::IsMatch($card, $pattern)) { throw "Missing metadata group in $cardPath" }
     $projectCards[$cardPath] = [regex]::Replace($card, $pattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($match) $metadata })
 }
