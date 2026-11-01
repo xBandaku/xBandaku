@@ -17,10 +17,21 @@ function Repo-Line($repo) {
     $line
 }
 $query = [Uri]::EscapeDataString("author:$user is:pr is:public")
+$mergedQuery = [Uri]::EscapeDataString("author:$user is:pr is:merged is:public")
 $jobs = @{
     pulls = Start-ThreadJob -Name 'pulls' -ArgumentList $headers, $query -ScriptBlock {
         param($requestHeaders, $searchQuery)
         Invoke-RestMethod -Uri ('https://api.github.com/search/issues?q=' + $searchQuery + '&sort=updated&order=desc&per_page=5') -Headers $requestHeaders
+    }
+    contributions = Start-ThreadJob -Name 'contributions' -ArgumentList $headers, $mergedQuery -ScriptBlock {
+        param($requestHeaders, $searchQuery)
+        $items = @()
+        for ($page = 1; $page -le 10; $page++) {
+            $result = Invoke-RestMethod -Uri ('https://api.github.com/search/issues?q=' + $searchQuery + '&sort=updated&order=desc&per_page=100&page=' + $page) -Headers $requestHeaders
+            $items += $result.items
+            if ($items.Count -ge $result.total_count -or !$result.items.Count) { break }
+        }
+        $items
     }
     stars = Start-ThreadJob -Name 'stars' -ArgumentList $headers -ScriptBlock {
         param($requestHeaders)
@@ -46,7 +57,7 @@ try {
         $page++
     } while ($batch.Count -eq 100)
 
-    $requestJobs = @($jobs.pulls, $jobs.stars) + @($jobs.extras)
+    $requestJobs = @($jobs.pulls, $jobs.contributions, $jobs.stars) + @($jobs.extras)
     Wait-Job -Job $requestJobs | Out-Null
     foreach ($job in $requestJobs) {
         if ($job.State -ne 'Completed') {
@@ -54,16 +65,30 @@ try {
         }
     }
     $pulls = Receive-Job -Job $jobs.pulls
+    $mergedPulls = @(Receive-Job -Job $jobs.contributions)
     $stars = @(Receive-Job -Job $jobs.stars)
     $contributedRepos = @($jobs.extras | ForEach-Object { Receive-Job -Job $_ })
 }
 finally {
-    $requestJobs = @($jobs.pulls, $jobs.stars) + @($jobs.extras)
+    $requestJobs = @($jobs.pulls, $jobs.contributions, $jobs.stars) + @($jobs.extras)
     Remove-Job -Job $requestJobs -Force
 }
 $latest = @($repos | Where-Object { !$_.fork } | Sort-Object created_at -Descending | Select-Object -First 5)
+$featuredRepos = @($repos | Where-Object { !$_.fork } | Sort-Object created_at -Descending)
+$contributionLines = $mergedPulls |
+    Group-Object repository_url |
+    ForEach-Object {
+        $pull = $_.Group[0]
+        $repoName = $pull.repository_url -replace '^https://api\.github\.com/repos/', ''
+        if ($repoName -and $repoName -notlike "$user/*") {
+            $repoUrl = 'https://github.com/' + $repoName
+            '- [' + (Safe-Text $repoName) + '](' + $repoUrl + ') — [Merged PR: ' + (Safe-Text $pull.title) + '](' + $pull.html_url + ')'
+        }
+    }
 $sections = @{
     projects = ($latest | ForEach-Object { Repo-Line $_ }) -join "`n"
+    featured = ($featuredRepos | ForEach-Object { Repo-Line $_ }) -join "`n"
+    contributed = $contributionLines -join "`n"
     prs = ($pulls.items | ForEach-Object {
         $repoName = ($_.repository_url -split '/repos/')[1]
         '- [' + (Safe-Text $_.title) + '](' + $_.html_url + ') on [' + (Safe-Text $repoName) + '](https://github.com/' + $repoName + ')'

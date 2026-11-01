@@ -32,11 +32,14 @@
   <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs-stats.svg?v=b586cfafef72" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
 </p>
 
-- **[HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED)** — Includes the JARVIS / SHIELD edition, live system stats, audio visualization, themes, and per-monitor OLED care.
-- **[HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)** — Hides your own floating screen-share preview while keeping your stream running.
+<sub>Public, non-fork repositories are listed automatically, newest first.</sub>
 
-- **[GLSS](https://github.com/xBandaku/GLSS)** — Automates school and university routines in Girl Life (18+), with one-click days and optional ghost attendance.
-- **[GLQS](https://github.com/xBandaku/GLQS)** — In-game quick setup, cheats, resource controls, and character presets for Girl Life (18+).
+<!-- featured:start -->
+- [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows live wallpaper HUD with system telemetry, audio visualization, themes, named profiles, and per-monitor OLED care.
+- [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
+- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school routine
+- [xBandaku/GLQS](https://github.com/xBandaku/GLQS) — Girl Life Quick Start
+<!-- featured:end -->
 
 [Browse all my repositories →](https://github.com/xBandaku?tab=repositories)
 
@@ -50,9 +53,12 @@
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=41e5331a6590" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
 </p>
 
-- **[Extras_Addon](https://github.com/Deadlineem/Extras_Addon)** — [Merged contribution](https://github.com/Deadlineem/Extras_Addon/pull/91) to the YimMenu addon.
-- **[f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter)** — [Merged pull requests](https://github.com/Zenix-Al/f95-zone-highlighter/pulls?q=is%3Apr+is%3Amerged+author%3AxBandaku) covering security fixes, library updates, configuration recovery, and UI reliability.
-- **[TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)** — Contributions to playback diagnostics, production userscript update URLs, and README improvements.
+<sub>Repositories with your merged public pull requests are listed automatically.</sub>
+
+<!-- contributed:start -->
+- [Deadlineem/Extras\_Addon](https://github.com/Deadlineem/Extras_Addon) — [Merged PR: Update Extras-Addon.lua](https://github.com/Deadlineem/Extras_Addon/pull/91)
+- [Zenix-Al/f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter) — [Merged PR: Remember dismissed notices, show library site blocks, harden test runner, upgrade happy-dom](https://github.com/Zenix-Al/f95-zone-highlighter/pull/83)
+<!-- contributed:end -->
 
 </details>
 
