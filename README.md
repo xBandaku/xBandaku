@@ -57,6 +57,7 @@
 
 <!-- contributed:start -->
 - [Deadlineem/Extras\_Addon](https://github.com/Deadlineem/Extras_Addon) — [Merged PR: Update Extras-Addon.lua](https://github.com/Deadlineem/Extras_Addon/pull/91)
+- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: Polish README layout and add project badges](https://github.com/xBandaku/TwitchAdSolutions/pull/49)
 - [Zenix-Al/f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter) — [Merged PR: Remember dismissed notices, show library site blocks, harden test runner, upgrade happy-dom](https://github.com/Zenix-Al/f95-zone-highlighter/pull/83)
 <!-- contributed:end -->
 
