@@ -107,11 +107,11 @@
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
+- [Add badges and refine project cards](https://github.com/xBandaku/xBandaku/pull/4) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Automatically categorize profile projects](https://github.com/xBandaku/xBandaku/pull/3) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Add TwitchAdSolutions to contributed projects](https://github.com/xBandaku/xBandaku/pull/2) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Run profile API requests concurrently](https://github.com/xBandaku/xBandaku/pull/1) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Polish README layout and add project badges](https://github.com/xBandaku/TwitchAdSolutions/pull/49) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [Restore production userscript update URLs](https://github.com/xBandaku/TwitchAdSolutions/pull/48) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
