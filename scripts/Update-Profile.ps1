@@ -35,7 +35,8 @@ $jobs = @{
     }
     stars = Start-ThreadJob -Name 'stars' -ArgumentList $headers -ScriptBlock {
         param($requestHeaders)
-        Invoke-RestMethod -Uri 'https://api.github.com/users/xBandaku/starred?per_page=5&sort=created&direction=desc' -Headers $requestHeaders
+        $starredRepos = Invoke-RestMethod -Uri 'https://api.github.com/users/xBandaku/starred?per_page=5&sort=created&direction=desc' -Headers $requestHeaders
+        foreach ($repo in $starredRepos) { $repo }
     }
     extras = @(
         Start-ThreadJob -Name 'extras-addon' -ArgumentList $headers -ScriptBlock {
