@@ -16,7 +16,9 @@
 
 - 🖥️ I build Windows desktop tools, live wallpaper HUDs, and customization projects.
 - 🛠️ I make game mods and plugins that simplify everyday tasks.
-- 🐼 Currently working on **HUD Live OLED** and **HideOwnStreamPreview**.
+- 🐼 Currently working on:
+  - [HUD Live OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows wallpaper HUD for system telemetry, audio visualization, and per-monitor OLED care.
+  - [HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord plugin that hides your own floating stream preview.
 - 💬 Have a bug report or an idea? Open an issue in the relevant project.
 
 <details open>
@@ -31,6 +33,8 @@
   <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss-stats.svg?v=fa1e701c40a4" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
   <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs-stats.svg?v=d7276dd74657" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
 </p>
+
+<p><sub><a href="https://github.com/xBandaku/HUD-Live-OLED/releases/latest">Download HUD Live OLED</a> · <a href="https://github.com/xBandaku/HUD-Live-OLED#release-packages">Build and release instructions</a> · <a href="https://github.com/xBandaku/HideOwnStreamPreview#installation">Install HideOwnStreamPreview</a></sub></p>
 
 <sub>Public, non-fork repositories are listed automatically, newest first.</sub>
 
@@ -119,7 +123,11 @@
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
-- [FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod Veydr/Veydr xBandaku/HideOwnStreamPreview xBandaku/xBandaku Equicord/Equicord](https://github.com/FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod https://github.com/Veydr/Veydr https://github.com/xBandaku/HideOwnStreamPreview https://github.com/xBandaku/xBandaku https://github.com/Equicord/Equicord) — Nice car\! Give me it. Veydr \| Windows tools, cinematic desktops, browser integrations and local AI. Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast. My projects, recent activity, and links. The other cutest Discord client mod
+- [FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod](https://github.com/FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod) — Nice car\! Give me it.
+- [Veydr/Veydr](https://github.com/Veydr/Veydr) — Veydr \| Windows tools, cinematic desktops, browser integrations and local AI.
+- [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
+- [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku) — My projects, recent activity, and links.
+- [Equicord/Equicord](https://github.com/Equicord/Equicord) — The other cutest Discord client mod
 <!-- stars:end -->
 
 </details>
