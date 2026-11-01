@@ -23,13 +23,13 @@
 <summary><h2>📘 Featured projects</h2></summary>
 
 <p>
-  <a href="https://github.com/xBandaku/HUD-Live-OLED"><img src="assets/projects/hud-live-oled-stats.svg?v=ac4faabb7203" width="48%" alt="HUD Live OLED — Windows wallpaper HUD with system stats, audio visualization, themes, and OLED care." /></a>
-  <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview-stats.svg?v=f91790af56f0" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
+  <a href="https://github.com/xBandaku/HUD-Live-OLED"><img src="assets/projects/hud-live-oled-stats.svg?v=d178753a2858" width="48%" alt="HUD Live OLED — Windows wallpaper HUD with system stats, audio visualization, themes, and OLED care." /></a>
+  <a href="https://github.com/xBandaku/HideOwnStreamPreview"><img src="assets/projects/hide-own-stream-preview-stats.svg?v=374493d0b405" width="48%" alt="HideOwnStreamPreview — Equicord plugin that hides your floating screen-share preview while keeping your stream running." /></a>
 </p>
 
 <p>
-  <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss-stats.svg?v=7ff1731a788b" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
-  <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs-stats.svg?v=b586cfafef72" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
+  <a href="https://github.com/xBandaku/GLSS"><img src="assets/projects/glss-stats.svg?v=fa1e701c40a4" width="48%" alt="GLSS — Girl Life mod (18+) that automates school and university routines." /></a>
+  <a href="https://github.com/xBandaku/GLQS"><img src="assets/projects/glqs-stats.svg?v=d7276dd74657" width="48%" alt="GLQS — Girl Life Quick Start (18+), with in-game setup, cheats, and character presets." /></a>
 </p>
 
 <sub>Public, non-fork repositories are listed automatically, newest first.</sub>
@@ -49,8 +49,8 @@
 <summary><h2>📕 Projects I've contributed to</h2></summary>
 
 <p>
-  <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=d931fd897483" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
-  <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=41e5331a6590" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
+  <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
+  <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
@@ -64,14 +64,18 @@
 
 ### 💻 Tech stack
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+<!-- languages:start -->
+![HTML](https://img.shields.io/badge/HTML-HTML-e34c26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-JavaScript-f1e05a?style=for-the-badge&logo=javascript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Python-3572A5?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
+<!-- languages:end -->
 ![PowerShell](assets/badges/powershell.svg)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
 <details open>
 <summary><h2>📊 Stats and contributions</h2></summary>
