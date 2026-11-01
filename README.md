@@ -52,6 +52,7 @@
 
 - **[Extras_Addon](https://github.com/Deadlineem/Extras_Addon)** — [Merged contribution](https://github.com/Deadlineem/Extras_Addon/pull/91) to the YimMenu addon.
 - **[f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter)** — [Merged pull requests](https://github.com/Zenix-Al/f95-zone-highlighter/pulls?q=is%3Apr+is%3Amerged+author%3AxBandaku) covering security fixes, library updates, configuration recovery, and UI reliability.
+- **[TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)** — Contributions to playback diagnostics, production userscript update URLs, and README improvements.
 
 </details>
 
