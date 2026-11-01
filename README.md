@@ -113,11 +113,11 @@
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
+- [Improve profile README project links](https://github.com/xBandaku/xBandaku/pull/7) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Add TwitchAdSolutions project badge card](https://github.com/xBandaku/xBandaku/pull/6) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Include fork contributions in profile](https://github.com/xBandaku/xBandaku/pull/5) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Add badges and refine project cards](https://github.com/xBandaku/xBandaku/pull/4) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Automatically categorize profile projects](https://github.com/xBandaku/xBandaku/pull/3) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
-- [Add TwitchAdSolutions to contributed projects](https://github.com/xBandaku/xBandaku/pull/2) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
