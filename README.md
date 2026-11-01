@@ -51,7 +51,7 @@
 <p>
   <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
-  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=a77f44094ff7" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
+  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=a77a367a4a0d" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
@@ -109,11 +109,11 @@
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
+- [Add TwitchAdSolutions project badge card](https://github.com/xBandaku/xBandaku/pull/6) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Include fork contributions in profile](https://github.com/xBandaku/xBandaku/pull/5) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Add badges and refine project cards](https://github.com/xBandaku/xBandaku/pull/4) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Automatically categorize profile projects](https://github.com/xBandaku/xBandaku/pull/3) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 - [Add TwitchAdSolutions to contributed projects](https://github.com/xBandaku/xBandaku/pull/2) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
-- [Run profile API requests concurrently](https://github.com/xBandaku/xBandaku/pull/1) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
