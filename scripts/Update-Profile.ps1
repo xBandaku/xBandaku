@@ -145,6 +145,7 @@ $featured = @{
     'GLQS' = 'glqs-stats'
     'Extras_Addon' = 'extras-addon'
     'f95-zone-highlighter' = 'f95-zone-highlighter'
+    'TwitchAdSolutions' = 'twitchadsolutions'
 }
 $projectLanguageColors = @{ HTML = '#e34c26'; TypeScript = '#3178c6'; JavaScript = '#f1e05a'; Python = '#3572a5'; Lua = '#000080' }
 $projectCards = @{}
