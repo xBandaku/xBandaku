@@ -80,7 +80,8 @@ $contributionLines = $mergedPulls |
     ForEach-Object {
         $pull = $_.Group[0]
         $repoName = $pull.repository_url -replace '^https://api\.github\.com/repos/', ''
-        if ($repoName -and $repoName -notlike "$user/*") {
+        $ownedRepo = $repos | Where-Object full_name -eq $repoName | Select-Object -First 1
+        if ($repoName -and $repoName -ne "$user/$user" -and (!$ownedRepo -or $ownedRepo.fork)) {
             $repoUrl = 'https://github.com/' + $repoName
             '- [' + (Safe-Text $repoName) + '](' + $repoUrl + ') — [Merged PR: ' + (Safe-Text $pull.title) + '](' + $pull.html_url + ')'
         }
