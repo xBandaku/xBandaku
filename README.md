@@ -55,7 +55,7 @@
 <p>
   <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
-  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=a77a367a4a0d" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
+  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=2be2147bb19e" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
