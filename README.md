@@ -124,7 +124,7 @@
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
-- [NVHT/Steam-Enhanced](https://github.com/NVHT/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like: navigation rail, cinematic Library Home, two-column game pages, Friends dock and a matching in-game overlay.
+- [NVHT/Steam-Enhanced](https://github.com/NVHT/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
 - [Ryoku-dev/ryoku](https://github.com/Ryoku-dev/ryoku) — Opinionated premium Arch workstation for powerful desktops and laptops.
 - [FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod](https://github.com/FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod) — Nice car\! Give me it.
 - [Veydr/Veydr](https://github.com/Veydr/Veydr) — Veydr \| Windows tools, cinematic desktops, browser integrations and local AI.
