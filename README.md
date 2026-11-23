@@ -124,11 +124,11 @@
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
+- [xBandaku/Steam-Enhanced](https://github.com/xBandaku/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
+- [madmaxgrey/AchievementManager](https://github.com/madmaxgrey/AchievementManager) — Achievement Manager for Steam 
+- [madmaxgrey/BrewHub](https://github.com/madmaxgrey/BrewHub) — Browse and install Millennium themes and plugins from steambrew.app inside Steam, with one click, using Millennium’s own installer.
 - [NVHT/Steam-Enhanced](https://github.com/NVHT/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
 - [Ryoku-dev/ryoku](https://github.com/Ryoku-dev/ryoku) — Opinionated premium Arch workstation for powerful desktops and laptops.
-- [FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod](https://github.com/FractalEngineer/RLS-Vehicle-Theft-Chop-Shop-Mod) — Nice car\! Give me it.
-- [Veydr/Veydr](https://github.com/Veydr/Veydr) — Veydr \| Windows tools, cinematic desktops, browser integrations and local AI.
-- [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
 <!-- stars:end -->
 
 </details>
