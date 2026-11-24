@@ -55,7 +55,7 @@
 <p>
   <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
-  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=cb84180169f5" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
+  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=30558c16f0ef" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
@@ -124,7 +124,7 @@
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
-- [xBandaku/Steam-Enhanced](https://github.com/xBandaku/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
+- [Marvisak/VIctory](https://github.com/Marvisak/VIctory) — An attempt at running GTA VI on PC
 - [madmaxgrey/AchievementManager](https://github.com/madmaxgrey/AchievementManager) — Achievement Manager for Steam 
 - [madmaxgrey/BrewHub](https://github.com/madmaxgrey/BrewHub) — Browse and install Millennium themes and plugins from steambrew.app inside Steam, with one click, using Millennium’s own installer.
 - [NVHT/Steam-Enhanced](https://github.com/NVHT/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
