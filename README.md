@@ -55,7 +55,7 @@
 <p>
   <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
-  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=30558c16f0ef" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
+  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=c04c3e540032" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
@@ -63,7 +63,7 @@
 <!-- contributed:start -->
 - [Deadlineem/Extras\_Addon](https://github.com/Deadlineem/Extras_Addon) — [Merged PR: Update Extras-Addon.lua](https://github.com/Deadlineem/Extras_Addon/pull/91)
 - [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme) — [Merged PR: fix: restore Store search, home card, calendar and Discovery Queue styling](https://github.com/kuska1/Material-Theme/pull/69)
-- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: Preserve paused stream mappings and add passive playback diagnostics](https://github.com/xBandaku/TwitchAdSolutions/pull/53)
+- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: fix\(vaft\): stop replaying recovery segments left over from an earlier break](https://github.com/xBandaku/TwitchAdSolutions/pull/64)
 - [Zenix-Al/f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter) — [Merged PR: Remember dismissed notices, show library site blocks, harden test runner, upgrade happy-dom](https://github.com/Zenix-Al/f95-zone-highlighter/pull/83)
 <!-- contributed:end -->
 
@@ -114,21 +114,21 @@
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
-- [Preserve paused stream mappings and add passive playback diagnostics](https://github.com/xBandaku/TwitchAdSolutions/pull/53) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [fix: restore Store header and discount colors](https://github.com/kuska1/Material-Theme/pull/71) on [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme)
-- [fix: restore Store search, home card, calendar and Discovery Queue styling](https://github.com/kuska1/Material-Theme/pull/69) on [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme)
-- [fix: restore rounded Store header Search, Wishlist and Cart controls](https://github.com/kuska1/Material-Theme/pull/68) on [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme)
-- [Document development setup from a fresh OS installation](https://github.com/xBandaku/TwitchAdSolutions/pull/50) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [fix\(vaft\): stop replaying recovery segments left over from an earlier break](https://github.com/xBandaku/TwitchAdSolutions/pull/64) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [brave-fix: skip installation on non-Brave browsers](https://github.com/xBandaku/TwitchAdSolutions/pull/63) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [vaft: reload a player that never restarted after a reload mid-break](https://github.com/xBandaku/TwitchAdSolutions/pull/62) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Release v68.5.42](https://github.com/xBandaku/TwitchAdSolutions/pull/61) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Guard GQL body parses in video-swap-new and strip](https://github.com/xBandaku/TwitchAdSolutions/pull/60) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
+- [Belobug/VIctory-Belobug-AMD](https://github.com/Belobug/VIctory-Belobug-AMD)
+- [brave/brave-browser](https://github.com/brave/brave-browser) — Brave browser for Android, iOS, Linux, macOS, Windows.
+- [brave/brave-core](https://github.com/brave/brave-core) — Core engine for the Brave browser for mobile and desktop. For issues https://github.com/brave/brave-browser/issues
+- [fxceless/victory-fork](https://github.com/fxceless/victory-fork) — Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files.
 - [Marvisak/VIctory](https://github.com/Marvisak/VIctory) — An attempt at running GTA VI on PC
-- [madmaxgrey/AchievementManager](https://github.com/madmaxgrey/AchievementManager) — Achievement Manager for Steam 
-- [madmaxgrey/BrewHub](https://github.com/madmaxgrey/BrewHub) — Browse and install Millennium themes and plugins from steambrew.app inside Steam, with one click, using Millennium’s own installer.
-- [NVHT/Steam-Enhanced](https://github.com/NVHT/Steam-Enhanced) — A Millennium theme that imagines what the Steam desktop client should look like.
-- [Ryoku-dev/ryoku](https://github.com/Ryoku-dev/ryoku) — Opinionated premium Arch workstation for powerful desktops and laptops.
 <!-- stars:end -->
 
 </details>
