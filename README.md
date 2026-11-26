@@ -41,8 +41,8 @@
 <!-- featured:start -->
 - [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows live wallpaper HUD with system telemetry, audio visualization, themes, named profiles, and per-monitor OLED care.
 - [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
-- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school routine
-- [xBandaku/GLQS](https://github.com/xBandaku/GLQS) — Girl Life Quick Start
+- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school and university routines
+- [xBandaku/GLQS](https://github.com/xBandaku/GLQS) — Quick-setup cheat mod for Girl Life ECV. One in-game menu for clothing, stats, money, relationships, jobs, presets and more.
 <!-- featured:end -->
 
 [Browse all my repositories →](https://github.com/xBandaku?tab=repositories)
@@ -55,7 +55,7 @@
 <p>
   <a href="https://github.com/Deadlineem/Extras_Addon"><img src="assets/projects/extras-addon.svg?v=fc9daca7cacc" width="48%" alt="Deadlineem/Extras_Addon — YimMenu addon tools, with a merged contribution." /></a>
   <a href="https://github.com/Zenix-Al/f95-zone-highlighter"><img src="assets/projects/f95-zone-highlighter.svg?v=2a2333550881" width="48%" alt="Zenix-Al/f95-zone-highlighter — userscript reliability and security fixes, with merged contributions." /></a>
-  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=c04c3e540032" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
+  <a href="https://github.com/xBandaku/TwitchAdSolutions"><img src="assets/projects/twitchadsolutions.svg?v=ab4c8c4b851b" width="48%" alt="TwitchAdSolutions — JavaScript tools for diagnosing and addressing Twitch ads." /></a>
 </p>
 
 <sub>Repositories with your merged public pull requests are listed automatically.</sub>
@@ -63,7 +63,8 @@
 <!-- contributed:start -->
 - [Deadlineem/Extras\_Addon](https://github.com/Deadlineem/Extras_Addon) — [Merged PR: Update Extras-Addon.lua](https://github.com/Deadlineem/Extras_Addon/pull/91)
 - [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme) — [Merged PR: fix: restore Store search, home card, calendar and Discovery Queue styling](https://github.com/kuska1/Material-Theme/pull/69)
-- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: fix\(vaft\): stop replaying recovery segments left over from an earlier break](https://github.com/xBandaku/TwitchAdSolutions/pull/64)
+- [xBandaku/Material-Theme](https://github.com/xBandaku/Material-Theme) — [Merged PR: CI: run the existing tests on pull requests](https://github.com/xBandaku/Material-Theme/pull/1)
+- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: Keep background playback alive across vaft reloads \(\#74\)](https://github.com/xBandaku/TwitchAdSolutions/pull/75)
 - [Zenix-Al/f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter) — [Merged PR: Remember dismissed notices, show library site blocks, harden test runner, upgrade happy-dom](https://github.com/Zenix-Al/f95-zone-highlighter/pull/83)
 <!-- contributed:end -->
 
@@ -107,18 +108,18 @@
 <!-- projects:start -->
 - [xBandaku/HUD-Live-OLED](https://github.com/xBandaku/HUD-Live-OLED) — Windows live wallpaper HUD with system telemetry, audio visualization, themes, named profiles, and per-monitor OLED care.
 - [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview) — Equicord userplugin that hides your own floating screen-share preview without stopping your broadcast.
-- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school routine
-- [xBandaku/GLQS](https://github.com/xBandaku/GLQS) — Girl Life Quick Start
+- [xBandaku/GLSS](https://github.com/xBandaku/GLSS) — GLSS - Girl Life School Skip: a mod for Girl Life \(ECV, 18+\) that automates or skips the in-game school and university routines
+- [xBandaku/GLQS](https://github.com/xBandaku/GLQS) — Quick-setup cheat mod for Girl Life ECV. One in-game menu for clothing, stats, money, relationships, jobs, presets and more.
 <!-- projects:end -->
 
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
-- [fix\(vaft\): stop replaying recovery segments left over from an earlier break](https://github.com/xBandaku/TwitchAdSolutions/pull/64) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [brave-fix: skip installation on non-Brave browsers](https://github.com/xBandaku/TwitchAdSolutions/pull/63) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [vaft: reload a player that never restarted after a reload mid-break](https://github.com/xBandaku/TwitchAdSolutions/pull/62) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [Release v68.5.42](https://github.com/xBandaku/TwitchAdSolutions/pull/61) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [Guard GQL body parses in video-swap-new and strip](https://github.com/xBandaku/TwitchAdSolutions/pull/60) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Keep background playback alive across vaft reloads \(\#74\)](https://github.com/xBandaku/TwitchAdSolutions/pull/75) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [fix\(vaft\): port backup and worker recovery fixes from the Helli24 fork](https://github.com/xBandaku/TwitchAdSolutions/pull/72) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Include vaft \[AD DEBUG\] console lines in the bug report](https://github.com/xBandaku/TwitchAdSolutions/pull/73) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [CI: build the plugin inside Equicord](https://github.com/xBandaku/HideOwnStreamPreview/pull/1) on [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)
+- [CI: lint the profile script and SVGs on pull requests](https://github.com/xBandaku/xBandaku/pull/8) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
