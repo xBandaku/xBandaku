@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Parse and analyze PowerShell scripts
+        shell: pwsh
+        run: |
+          $failed = $false
+          foreach ($file in Get-ChildItem -Recurse -Filter *.ps1) {
+              $errors = $null
+              [System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$null, [ref]$errors) | Out-Null
+              foreach ($e in $errors) {
+                  Write-Output "::error file=$($file.FullName),line=$($e.Extent.StartLineNumber)::$($e.Message)"
+                  $failed = $true
+              }
+          }
+          Set-PSRepository PSGallery -InstallationPolicy Trusted
+          Install-Module PSScriptAnalyzer -Scope CurrentUser -Force
+          $issues = Invoke-ScriptAnalyzer -Path . -Recurse -Severity Error
+          foreach ($i in $issues) {
+              Write-Output "::error file=$($i.ScriptPath),line=$($i.Line)::$($i.RuleName): $($i.Message)"
+              $failed = $true
+          }
+          if ($failed) { exit 1 }
+
+      - name: Check SVGs are well-formed XML
+        shell: pwsh
+        run: |
+          $failed = $false
+          foreach ($file in Get-ChildItem -Recurse -Filter *.svg) {
+              try { [xml](Get-Content -Raw $file.FullName) | Out-Null }
+              catch { Write-Output "::error file=$($file.FullName)::$($_.Exception.Message)"; $failed = $true }
+          }
+          if ($failed) { exit 1 }
