@@ -64,7 +64,7 @@
 - [Deadlineem/Extras\_Addon](https://github.com/Deadlineem/Extras_Addon) — [Merged PR: Update Extras-Addon.lua](https://github.com/Deadlineem/Extras_Addon/pull/91)
 - [kuska1/Material-Theme](https://github.com/kuska1/Material-Theme) — [Merged PR: fix: restore Store search, home card, calendar and Discovery Queue styling](https://github.com/kuska1/Material-Theme/pull/69)
 - [xBandaku/Material-Theme](https://github.com/xBandaku/Material-Theme) — [Merged PR: CI: run the existing tests on pull requests](https://github.com/xBandaku/Material-Theme/pull/1)
-- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: Keep background playback alive across vaft reloads \(\#74\)](https://github.com/xBandaku/TwitchAdSolutions/pull/75)
+- [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions) — [Merged PR: Add a live background-tab harness \(npm run live:background\)](https://github.com/xBandaku/TwitchAdSolutions/pull/78)
 - [Zenix-Al/f95-zone-highlighter](https://github.com/Zenix-Al/f95-zone-highlighter) — [Merged PR: Remember dismissed notices, show library site blocks, harden test runner, upgrade happy-dom](https://github.com/Zenix-Al/f95-zone-highlighter/pull/83)
 <!-- contributed:end -->
 
@@ -115,21 +115,21 @@
 ### 🔨 My recent Pull Requests
 
 <!-- prs:start -->
+- [fix\(vaft\): port hidden tab handling fixes from xBandaku/TwitchAdSolutions](https://github.com/Helli24/TwitchAdSolutions/pull/35) on [Helli24/TwitchAdSolutions](https://github.com/Helli24/TwitchAdSolutions)
+- [Add a live background-tab harness \(npm run live:background\)](https://github.com/xBandaku/TwitchAdSolutions/pull/78) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Skip the vaft post-break wedge check on hidden pages \(vaft 68.5.49\)](https://github.com/xBandaku/TwitchAdSolutions/pull/77) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
+- [Defer vaft player reloads while the page is hidden \(\#74, vaft 68.5.48\)](https://github.com/xBandaku/TwitchAdSolutions/pull/76) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
 - [Keep background playback alive across vaft reloads \(\#74\)](https://github.com/xBandaku/TwitchAdSolutions/pull/75) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [fix\(vaft\): port backup and worker recovery fixes from the Helli24 fork](https://github.com/xBandaku/TwitchAdSolutions/pull/72) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [Include vaft \[AD DEBUG\] console lines in the bug report](https://github.com/xBandaku/TwitchAdSolutions/pull/73) on [xBandaku/TwitchAdSolutions](https://github.com/xBandaku/TwitchAdSolutions)
-- [CI: build the plugin inside Equicord](https://github.com/xBandaku/HideOwnStreamPreview/pull/1) on [xBandaku/HideOwnStreamPreview](https://github.com/xBandaku/HideOwnStreamPreview)
-- [CI: lint the profile script and SVGs on pull requests](https://github.com/xBandaku/xBandaku/pull/8) on [xBandaku/xBandaku](https://github.com/xBandaku/xBandaku)
 <!-- prs:end -->
 
 ### ⭐ Recent Stars
 
 <!-- stars:start -->
-- [Belobug/VIctory-Belobug-AMD](https://github.com/Belobug/VIctory-Belobug-AMD)
 - [brave/brave-browser](https://github.com/brave/brave-browser) — Brave browser for Android, iOS, Linux, macOS, Windows.
 - [brave/brave-core](https://github.com/brave/brave-core) — Core engine for the Brave browser for mobile and desktop. For issues https://github.com/brave/brave-browser/issues
 - [fxceless/victory-fork](https://github.com/fxceless/victory-fork) — Work-in-progress fork of VIctory: getting an Xbox Series title to render and run on a Windows PC. No game files.
 - [Marvisak/VIctory](https://github.com/Marvisak/VIctory) — An attempt at running GTA VI on PC
+- [madmaxgrey/AchievementManager](https://github.com/madmaxgrey/AchievementManager) — Achievement Manager for Steam 
 <!-- stars:end -->
 
 </details>
